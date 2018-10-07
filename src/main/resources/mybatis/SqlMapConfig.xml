@@ -3,17 +3,5 @@
 PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-	<!-- 加载mapper文件 -->
-	<mappers>
-		<!-- resourse基于classpath查找 -->
-		<mapper resource="sqlmap/user.xml"/>
-		<!-- <mapper resource="sqlmap/user.xml"/> -->
-		<!-- 根据接口名称加载mapper文件
-			要求：	1、mapper和映射文件在同一个目录下
-					2、mapper映射文件的名称和接口名称一致
-					3、class就是接口的权限类名 
-		-->
-		<!-- 使用扫描包的形式加载mapper文件 -->
-		<!-- <package name="SwXyFw.src.main.resources.sqlmap"/> -->
-	</mappers>
+
 </configuration>
