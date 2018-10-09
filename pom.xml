@@ -29,6 +29,20 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+                <exclusion>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>logback-classic</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>logback-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
 		</dependency>
 
 		<dependency>
@@ -136,7 +150,6 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-aspects -->
@@ -181,19 +194,21 @@
 			<artifactId>spring-webmvc</artifactId>
 
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.junit.platform</groupId>
 			<artifactId>junit-platform-commons</artifactId>
 			<version>1.3.1</version>
 		</dependency>
-		
+
 		<dependency>
-        <groupId>org.junit.vintage</groupId>
-        <artifactId>junit-vintage-engine</artifactId>
-        <scope>test</scope>
-    </dependency>
+			<groupId>org.junit.vintage</groupId>
+			<artifactId>junit-vintage-engine</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 		
+
 	</dependencies>
 
 	<build>
